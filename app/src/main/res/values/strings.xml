@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Сервис</string>
+    <string name="StartButtonText">Старт</string>
+    <string name="StopButtonText">Стоп</string>
+    <string name="IntervalText">Периодичность запуска:</string>
+    <string-array name="SpinnerItems">
+        <item>Каждые чч:мм:сс</item>
+        <item>В указанное время</item>
+    </string-array>
+    <string name="IntervalLabelText">Интервал (каждые чч:мм:сс):</string>
+    <string name="MailSettingText">Настройки почты &gt;</string>
+    <string name="PasswordText">Пароль</string>
+    <string-array name="ListViewDefVal">
+        <item>09:59:59</item>
+        <item>10:00:07</item>
+        <item>10:00:19</item>
+        <item>12:00:00</item>
+        <item>23:59:58</item>
+    </string-array>
+    <string name="AddItemText">+</string>
+    <string name="ClearItemText">-</string>
+</resources>

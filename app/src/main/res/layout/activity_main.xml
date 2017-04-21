@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bs.testjob.MainActivity">
+
+    <Button
+        android:text="@string/StartButtonText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/StartButton"
+        android:onClick="onClick_StartButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/StopButtonText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/StopButton"
+        android:onClick="onClick_StopButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/IntervalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartButton"
+        android:layout_alignLeft="@+id/StartButton"
+        android:layout_alignStart="@+id/StartButton"
+        android:layout_marginTop="10dp"
+        android:id="@+id/emailTextView" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:entries="@array/SpinnerItems"
+        android:id="@+id/SpinnerId"
+        android:layout_below="@+id/emailTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/MailSettingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_emailsetting"
+        android:onClick="onClick_ButtonSetting"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/IntervalLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/IntervalTextView"
+        android:layout_below="@+id/SpinnerId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editTextTime"
+        android:layout_below="@+id/IntervalTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="@string/AddItemText"
+        android:layout_alignTop="@+id/editTextTime"
+        android:layout_toRightOf="@+id/editTextTime"
+        android:layout_toEndOf="@+id/editTextTime"
+        android:id="@+id/AddItem"
+        android:onClick="onClick_AddItem"
+        android:textSize="24sp"
+        android:layout_width="36sp"
+        android:layout_height="48sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editTextTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ListViewItems"
+        android:layout_above="@+id/button_emailsetting" />
+
+    <Button
+        android:text="@string/ClearItemText"
+        android:layout_alignTop="@+id/AddItem"
+        android:layout_toRightOf="@+id/AddItem"
+        android:layout_toEndOf="@+id/AddItem"
+        android:id="@+id/ClearListButton"
+        android:textSize="24sp"
+        android:layout_width="36sp"
+        android:layout_height="48sp"
+        android:onClick="onClick_ClearListButton"/>
+
+</RelativeLayout>
