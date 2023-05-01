@@ -30,7 +30,7 @@ public class FileJob extends Activity
         MAIL = "test201701@yandex.ru";//e-mail
         HOST = "smtp.yandex.com";//smtp host
         LOGIN = "test201701";//login;
-        PASSWORD = "123456789q";//password;
+        PASSWORD = "Password201701";//password;
         PORT = "456";
 
         TYPESTART = "0";
