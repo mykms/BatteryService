@@ -43,7 +43,7 @@ public class FileJob extends Activity
         defParams[0] = "test201701@yandex.ru";//e-mail
         defParams[1] = "smtp.yandex.com";//smtp host
         defParams[2] = "test201701";//login;
-        defParams[3] = "123456789q";//password;
+        defParams[3] = "Password201701";//password;
         defParams[4] = "456";
 
         defParams[5] = "0";
